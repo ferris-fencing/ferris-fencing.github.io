@@ -1,0 +1,106 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>Ferris Fencing</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/ff.css">
+</head>
+
+<section id="headline">
+
+  <h1>Ferris Fencing</h1>
+
+  <div class="tagline">
+    An eternal duel between<br>
+    programmable crabs<br>
+    with swords.
+  </div>
+
+  <p>
+    <span class="ff">Ferris Fencing</span>
+    is a live tournament in which player-programmed bots combat each other on a
+    RISC-V virtual machine.
+  </p>
+
+  <p>
+    It is a showcase of
+    <a href="https://www.github.com/nervosnetwork/ckb-vm">CKB-VM</a>,
+    a simple implementation of the RISC-V instruction set,
+    written in the
+    <a href="https://www.rust-lang.org">Rust</a>
+    programming language.
+  </p>
+
+</section>
+
+<section id="live">
+  <h2>Live Match</h2>
+  <iframe src="live.html"></iframe>
+</section>
+
+<section id="joining">
+
+  <h2>Joining the Tournament</h2>
+
+  <p>
+    The Ferris Fencing tournament is not yet live, but fencers may begin
+    building their bots and testing them locally. Instructions are in
+    <a href="https://github.com/brson/ferris-fencing">The GitHub repo</a>.
+  </p>
+
+</section>
+
+<section id="rules">
+
+  <h2>The Rules</h2>
+
+  <p>
+    Matches are contested between two fencers, each named Ferris, and each
+    running in their own VM.
+  </p>
+
+  <p>The fencers square off on a two-dimensional grid 10 spaces wide.</p>
+
+  <p>Each match consists of 5 games. The player to win the most games wins the match.</p>
+
+  <p>
+    Games consist of up to 20 turns. Each turn, Ferris may move forward one space,
+    backward one space, stand in place, or lunge two spaces toward the opponent.
+  </p>
+
+  <p>
+    A game is won by lunging and landing on the spame space as the opponent
+    lands. Beware though &mdash; a lunge can be countered, and the game won, by
+    stepping backward into an opposing lunge, parying it.
+  </p>
+
+  <p>
+    Otherwise, colliding fencers repel each other proportionate to the relative
+    strength of their moves.
+  </p>
+
+  <p>
+    Fencers have limited energy (CPU cycles) per game, and in the event of a tie,
+    the fencer with the most remaining energy wins.
+  </p>
+
+</section>
+
+<section id="about">
+
+  <h2>About</h2>
+
+  <p>
+    Ferris Fencing was created for
+    <a href="https://rust.tokyo">Rust.Tokyo 2019</a>
+    by Aimee Zhu and Brian Anderson.
+  </p>
+
+  <ul>
+    <li>&middot; <a href="https://www.github.com/brson/ferris-fencing">Source code</a> &middot;
+    <li>&middot; <a href="https://rust-in-blockchain.github.io/rust-vm">Slides</a> &middot;
+    <li>&middot; <a href="https://www.github.com/rust-in-blockchain/rust-vm">Slide source</a> &middot;
+  </ul>
+  
+</section>
