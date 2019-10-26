@@ -27,6 +27,7 @@ html {
 html {
     height: 100%;
     color: var(--fg-color);
+    background-color: var(--bg-color);
 }
 
 body {
@@ -174,4 +175,8 @@ img {
 #statusbox > #status-msg {
     flex-basis: 100%;
     text-align: center;
+}
+
+#statusbox {
+    display: none; /* FIXME */
 }
